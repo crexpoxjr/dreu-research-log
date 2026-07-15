@@ -1,10 +1,10 @@
 # Week 4
 
-**Dates:** MM-DD to MM-DD
+**Dates:** 07-DD to 07-DD
 
 ## Goals
 
-
+- Continue and finish working on suggested changes
 
 ## Approach and Implementation
 
