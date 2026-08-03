@@ -10,7 +10,7 @@
 
 - Second, make sure the CNN training script is actually training on ORACLE data, not the synthetic toy data. Some of the current scripts and folder names make it a little hard to tell which dataset is being used. Please create a clear ORACLE training command, for example something like this: "python -m src.training.train --config configs/oracle_cnn.yaml" That config should specify the ORACLE dataset path, window length, channels, normalization, split, model, batch size, learning rate, seed, and output folder.
 
-- Third, work on the split protocol. A random window-level split is okay for debugging, but it can overstate RF fingerprinting performance, especially if adjacent or overlapping windows from the same recording appear in both train and test. For the next result, please save an explicit split file and include enough metadata to check for leakage. Each window should keep metadata such as device ID, source file, run/configuration, window start/end, dataset name, and any available ORACLE condition labels.
+- Third, work on the split protocol. A random window-level split is okay for debugging, but it can overstate RF fingerprinting performance, especially if adjacent or overlapping windows from the same recording appear in both train and test. For the next result, please save an explicit split file and include enough metadata to check for leakage. Each window should keep metadata such as device ID, source file, run/configuration, window start/end, dataset name, and  Something I noticed is that the training accuracy tends to be slightly higher in training than in testing accuracyany available ORACLE condition labels.
 
 - Fourth, every reported run should save the basic research artifacts. At minimum, please save:
 
