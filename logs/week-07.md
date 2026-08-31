@@ -4,7 +4,9 @@
 
 ## Goals
 
+- Fully adapt WiSig dataset.
 
+- Implement a robustness suite.
 
 ## Approach and Implementation
 
